@@ -1,7 +1,7 @@
 #include "stats.h"
 #include<vector>
 #include<algorithm>
-
+#include<numeric>
 using namespace std;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
@@ -18,8 +18,6 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
     
     return result;
 }
-
-   
 
 double FindAverage(const std::vector<double>&V) {
     double avg = 0;
@@ -39,4 +37,3 @@ double FindMin(const std::vector<double>&V){
     min = *min_element(V.begin(), V.end());
     return min;
 }
-
