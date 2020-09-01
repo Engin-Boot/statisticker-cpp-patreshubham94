@@ -20,9 +20,10 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
 
 double Statistics :: FindAverage(const std::vector<double>&V) {
     double sum = 0;
+    double v_size = V.size();
     sum = accumulate(V.begin(), V.end(), 0);
-    cout<<sum/V.size()<<endl;
-    return sum/V.size();   
+    cout<<sum/v_size<<endl;
+    return sum/v_size;   
 }
 
 double Statistics :: FindMax(const std::vector<double>&V){
