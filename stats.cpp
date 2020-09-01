@@ -20,7 +20,9 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
 
 double Statistics :: FindAverage(const std::vector<double>&V) {
     double avg = 0;
-    avg = (accumulate(V.begin(), V.end(), 0))/V.size();
+    double sum = 0;
+    sum = accumulate(V.begin(), V.end(), 0);
+    avg = sum/V.size();
     return avg;
 }
 
