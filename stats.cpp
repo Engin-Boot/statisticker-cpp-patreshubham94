@@ -15,19 +15,13 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
     result.Max     = FindMax(V);
     result.Min     = FindMin(V);
     
-    return result;
-    
-    //return FindStats(V);
+    return result; 
+   
 }
-
-//Stats FindStats(const std::vector<double>& V){
-    
-//}
 
 double FindAverage(const std::vector<double>&V) {
     double avg = 0;
-    avg = accumulate(V.begin(), V.end(), 0);
-    avg = avg/V.size();
+    avg = (accumulate(V.begin(), V.end(), 0))/V.size();
     return avg;
 }
 
