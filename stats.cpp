@@ -1,5 +1,7 @@
 #include "stats.h"
 #include<vector>
+#include<algorithm>
+
 using namespace std;
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
