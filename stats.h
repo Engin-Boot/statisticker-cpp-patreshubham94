@@ -2,12 +2,13 @@
 #include <iostream>
 
 class Stats {
+    public: 
+    
     double Average;
     double Max;
     double Min;
-};
-
-namespace Statistics {
+    
+    namespace Statistics {
     Stats ComputeStatistics(const std::vector<double>& );
         
     double FindAverage(const std::vector<double>&);
@@ -15,3 +16,6 @@ namespace Statistics {
     double FindMin(const std::vector<double>&);
     
 }
+};
+
+
