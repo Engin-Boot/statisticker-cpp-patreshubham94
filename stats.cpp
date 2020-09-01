@@ -23,20 +23,20 @@ Stats FindStats(const std::vector<double>& V){
     return result;
 }
 
-double FindAverage(const std::vector<double>&V) {
+Stats Statistics :: FindAverage(const std::vector<double>&V) {
     double avg = 0;
     avg = accumulate(V.begin(), V.end(), 0);
     avg = avg/V.size();
     return avg;
 }
 
-double FindMax(const std::vector<double>&V){
+Stats Statistics :: FindMax(const std::vector<double>&V){
     double max = 0;
     max = *max_element(V.begin(), V.end());
     return max;
 }
 
-double FindMin(const std::vector<double>&V){
+Stats Statistics :: FindMin(const std::vector<double>&V){
     double min = 0;
     min = *min_element(V.begin(), V.end());
     return min;
