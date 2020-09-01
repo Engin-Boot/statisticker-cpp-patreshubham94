@@ -7,13 +7,15 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& V ) {
         Stats = NoNumber;
       return Stats;
   }  
-  Stats result;
+ 
+}
+
+    Stats result;
     result.Average = FindAverage(V);
     result.Max     = FindMax(V);
     result.Min     = FindMin(V);
     
     return result;
-}
 
 double FindAverage(const std::vector<double>&V) {
     double avg = 0;
