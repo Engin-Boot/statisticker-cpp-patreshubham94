@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <math.h>
 
 class Stats {
     public: 
@@ -8,7 +9,17 @@ class Stats {
     double Max;
     double Min;
     
-    namespace Statistics {
+    
+    Stats(){
+        Average = nan("null");
+        Max = nan("null");
+        Min = nan("null");
+    }
+    
+};
+
+
+namespace Statistics {
     Stats ComputeStatistics(const std::vector<double>& );
         
     double FindAverage(const std::vector<double>&);
@@ -16,6 +27,3 @@ class Stats {
     double FindMin(const std::vector<double>&);
     
 }
-};
-
-
