@@ -21,10 +21,10 @@ class Stats {
 
 namespace Statistics {
     Stats ComputeStatistics(const std::vector<double>& );
-    Stats FindStats(const std::vector<double>&);
+    //Stats FindStats(const std::vector<double>&);
     
-    Stats FindAverage(const std::vector<double>&);
-    Stats FindMax(const std::vector<double>&);
-    Stats FindMin(const std::vector<double>&);
+    double FindAverage(const std::vector<double>&);
+    double FindMax(const std::vector<double>&);
+    double FindMin(const std::vector<double>&);
     
 }
